@@ -152,11 +152,11 @@ padding-bottom: 24px;
 
 
 .first-solutions {
-    background-color: #2E2F42;
+    background-color: rgba(46, 47, 66, 0.70);
     background-image: linear-gradient(
-    to bottom, rgba(46, 47, 66, 0.70),
+    rgba(46, 47, 66, 0.70),
     rgba(46, 47, 66, 0.70)),
-    url(../images/header-bg.jpg);
+    url(../images/header-bg-mob.jpg);
     max-width: 288px; 
     background-position: center;
     background-repeat: no-repeat;
@@ -166,9 +166,23 @@ padding-bottom: 24px;
     margin: 0 auto;
     text-align: center;
 } 
-.solutions-container {
+
+    @media (min-device-pixel-ratio: 2),
+(min-resolution: 192dpi),
+(min-resolution: 2dppx) {
+    .first-solutions {
+        background-image: linear-gradient(
+    rgba(46, 47, 66, 0.70),
+    rgba(46, 47, 66, 0.70)),
+    url(../images/header-bg-mob-2x.jpg);        
+    }
+} 
+/* .solutions-container{
     background-color: transparent; 
-}
+} */
+
+
+
 .solutions-title {
     color: #FFF;
     font-size: 36px;
@@ -852,7 +866,6 @@ display: block;
 {
     .container{
     }
-
 }
 
 
@@ -863,7 +876,26 @@ display: block;
     .first-solutions{
         max-width: 768px; 
         margin: 0 auto;
+
+    background-color: rgba(46, 47, 66, 0.70);
+    background-image: linear-gradient(
+    rgba(46, 47, 66, 0.70),
+    rgba(46, 47, 66, 0.70)),
+    url(../images/header-bg-tab.jpg);
         }
+
+        @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .first-solutions {
+        background-image: linear-gradient
+        (
+    rgba(46, 47, 66, 0.70),
+    rgba(46, 47, 66, 0.70)),
+    url(../images/header-bg-tab-2x.jpg);
+    }
+} 
+
     .solutions-title {
         text-align: justify;
         font-size: 56px;
@@ -872,6 +904,7 @@ display: block;
         margin-bottom: 36px;
         padding: 0;
         }
+
     .solutions-btn{
 
     }
@@ -959,9 +992,26 @@ display: block;
 @media screen and (min-width: 1158px)
 {
     .first-solutions{
+
     padding-top: 188px;
     padding-bottom: 188px;  
-        max-width: 1440px; 
+        max-width: 1440px;
+        background-color: rgba(46, 47, 66, 0.70);
+    background-image: linear-gradient(
+    rgba(46, 47, 66, 0.70),
+    rgba(46, 47, 66, 0.70)),
+    url(../images/header-bg-dt.jpg);
+        }
+
+        @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .first-solutions {
+        background-image: linear-gradient(
+    rgba(46, 47, 66, 0.70),
+    rgba(46, 47, 66, 0.70)),
+    url(../images/header-bg-dt-2x.jpg);
+        } 
     }
     .solutions-title {
         font-size: 56px;
@@ -970,8 +1020,6 @@ display: block;
         margin: 0 auto 48px auto;
     }
     
-
-
     .container {
         max-width: 1158px; 
         padding-left: 15px;
