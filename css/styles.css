@@ -140,7 +140,6 @@ button{
 .address {
     font-style: normal;
     justify-content: flex-end;
-
 }
 .address-list {
     gap: 40px;
@@ -1048,6 +1047,43 @@ display: block;
         padding-left: 16px;
         padding-right: 16px; 
     }
+
+    .header{
+max-width: 768px;
+    }
+
+    .header-container{
+width: 768px;
+display: flex;
+    }
+    .address{
+        margin-left: auto;
+        padding: 16px 0;
+
+    }
+    .address-list {
+        display: flex;
+        flex-direction: column;
+        font-style: normal;
+        gap: 12px;
+    }
+    .address-item {
+        padding: 0;
+        color: #434455;
+
+font-family: Roboto;
+font-size: 12px;
+font-style: normal;
+font-weight: 400;
+line-height: 1.17 /* 116.667% */
+letter-spacing: 0.04em;
+    }
+
+    .menu-open-btn{
+        display: none;
+    }
+
+
     .features-list{
         gap: 72px 24px;        
     }
@@ -1077,6 +1113,9 @@ display: block;
     width: calc((100% - 24px) / 2);
     }
 
+    .footer{
+        max-width: 768px;
+    }
     .footer-container {
         padding-left: 93px;
         display: flex;
@@ -1091,12 +1130,7 @@ display: block;
     }
     .footer-soc-list{
         padding-left: 0;
-    }    
-
-    
-        .footer-container {
-            display: flex;
-        }
+    }        
         .footer-logo-text{
         }
         .footer-logo-text .footer-logo {
@@ -1125,7 +1159,22 @@ display: block;
         
 @media screen and (min-width: 1158px)
 {
+    .container {
+        max-width: 1158px; 
+        padding-left: 15px;
+        padding-right: 15px; 
+    }
+    .header{
+        max-width: 1440px;
+    }
 
+    .header-container{
+        width: 1158px;
+        display: flex;
+        
+        
+
+    }
     .header-menu-link{
         display: block;
     }
@@ -1135,21 +1184,40 @@ display: block;
 
     }
     .header-logo {
-        padding-top: 24px;
-    padding-bottom: 24px;
     margin-right: 76px;
     }
     .header-menu-list {
     display: flex;    
     gap: 40px;
     }
+    .menu-open-btn{
+        display: none;
+    }
+    .header-nav {
+        justify-content: start;
+    }
+    .address {
+        font-style: normal;
+        justify-content: flex-end;
+        margin-left: auto;
+        padding: 0;
+    }
+    .address-list {
+        gap: 40px;
+        display: flex;
+        align-items: center;
+  flex-direction: row;
+  padding: 24px 0;
+    }
+    .address-item {
+        font-size: 16px;
 
+    }
+
+    
 
     .first-solutions{
-
-    padding-top: 188px;
-    padding-bottom: 188px;  
-        max-width: 1158px;
+        max-width: 1440px;
         background-color: rgba(46, 47, 66, 0.70);
     background-image: linear-gradient(
     rgba(46, 47, 66, 0.70),
@@ -1159,26 +1227,28 @@ display: block;
 
         @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
+    (min-resolution: 2dppx) 
+    {
+        
     .first-solutions {
         background-image: linear-gradient(
     rgba(46, 47, 66, 0.70),
     rgba(46, 47, 66, 0.70)),
     url(../images/header-bg-dt-2x.jpg);
-        } 
-    }
+    } 
+    
     .solutions-title {
+        width: 1158px;
         font-size: 56px;
         line-height: 1.07;
         max-width: 496px;
         margin: 0 auto 48px auto;
     }
     
-    .container {
-        max-width: 1158px; 
-        padding-left: 15px;
-        padding-right: 15px; 
+    .solutions-container{
+    padding: 188px 0;
     }
+    
     .features-list{
     gap: 24px;
     }
@@ -1202,19 +1272,21 @@ display: block;
         .portfolio-list {
         }
         .portfolio-list-item {
-            width: calc((100% - 24px * 2) / 3);
+        width: calc((100% - 24px * 2) / 3);
         }
-
         .footer{
-            padding: 100px 0;
+        max-width: 1440px;
+        padding: 100px 156px;
         }        
         .footer-container {
         display: flex;
         flex-wrap: nowrap;
         gap: 0;
+        padding: 0;
+        margin-left: 0;
         }            
         .footer-logo-text{
-            margin-right: 120px;
+        margin-right: 120px;
         }
         .footer-logo-text .footer-logo {
             text-align: left;
