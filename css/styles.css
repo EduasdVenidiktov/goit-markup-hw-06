@@ -194,6 +194,7 @@ padding-bottom: 24px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    overflow: auto;
     opacity: 0;
     visibility: hidden;
     pointer-events: auto;
@@ -764,11 +765,11 @@ filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15))
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 408px;
-    min-height: 584px; 
+    width: 288px;
+    min-height: 623px; 
     border-radius: 4px;
     background: #FCFCFC;
-    padding: 72px 24px 24px 24px; /*перевірити необхідність*/
+    padding: 72px 16px 24px 16px; /*перевірити необхідність*/
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2); 
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1); 
 }
@@ -848,6 +849,7 @@ display: block;
 .modal-input-wrap{
     position: relative;
 }
+
 .modal-input{
     width: 100%;
     height: 40px;
@@ -884,6 +886,7 @@ display: block;
     width: 100%;
     height: 120px;
     color: rgba(46, 47, 66, 0.4); 
+    
     font-size: 12px;
     line-height: 1.17;
     letter-spacing: 0.04em;
@@ -896,29 +899,43 @@ display: block;
     resize: none;    
 }
 
-/* .is-open{
+.is-open{
     opacity: 1;
     visibility: visible;
     pointer-events: auto;
-} */
+}
 
 .modal-checkbox{
+    
     margin-bottom: 24px;
+    
 }
 .check-input{
     fill: #404BBF;
 }
+
+.check-link-column{
+    display: flex;
+    flex-direction: column;
+
+}
 .check-text{
+    display: flex;
+    
+    gap: 8px;
+    width: 100%;
+    text-align:justify;
+
     color: #8E8F99;
     font-size: 12px;
     line-height: 1.17;
     letter-spacing: 0.04em;
-    max-width: 338px;
     align-items: center;
     line-height: 1.17;
 }
 .check-span{
-    display: inline-flex; 
+    
+    display: inline-block;
     align-items: center; 
     justify-content: center;
     border: 1px solid rgba(46, 47, 66, 0.4); 
@@ -927,7 +944,7 @@ display: block;
     border-radius: 2px; 
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
     fill: transparent;
-    margin-right: 8px;
+    
 }
 .check-icon{
     color: #4D5AE5;
@@ -938,10 +955,10 @@ display: block;
     font-weight: 400;
     line-height: 16px;
     letter-spacing: 0.48px;
+
 }
 
 .privacy-link{
-    margin-left: 2px;
     color: #4d5ae5;
 }
 
@@ -991,8 +1008,6 @@ display: block;
 {
     .container {
         max-width: 768px; 
-        /* padding-left: 16px;
-        padding-right: 16px;  */
         margin: 0 auto;
     }
     
@@ -1159,6 +1174,29 @@ letter-spacing: 0.04em;
             padding: 0;
         }
 
+        .check-text{
+            /*html 590, 595  */
+            width: 338px;
+        }
+        .check-span{
+            margin-right: 8px;
+        }
+        .modal{
+            width: 408px;
+            padding: 72px 25px 24px 23px;
+        }
+        
+        .check-text{
+            width: 100%;}
+
+        .check-link-column{
+            display: inline-block;
+        }
+        .check-span{
+            margin: 0;
+        }
+
+
 
         
 @media screen and (min-width: 1158px)
@@ -1249,9 +1287,8 @@ letter-spacing: 0.04em;
     }
     
     .solutions-container{
-    max-width: 1158px;
+    min-width: 1158px;
     padding: 188px 0;
-
     }
     
     
@@ -1268,15 +1305,19 @@ letter-spacing: 0.04em;
 
         .third-team
     {
+
 }        
         .team-list {
             flex-wrap: nowrap;
-            gap: 24px;            
+            gap: 24px; 
+            min-width: 1440px;           
         }
         .info-team-item{
             padding-left: 16px;
             padding-right: 16px;
         }
+
+
         .fourth-portfolio {
         }
         .portfolio-list {
