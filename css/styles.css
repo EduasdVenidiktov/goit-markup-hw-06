@@ -1293,7 +1293,8 @@ letter-spacing: 0.04em;
     
     
     .features-list{
-    gap: 24px;
+        gap: 24px;
+        
     }
     .features-icon-wrap{
         display: block;
@@ -1308,9 +1309,8 @@ letter-spacing: 0.04em;
 
 }        
         .team-list {
-            flex-wrap: nowrap;
             gap: 24px; 
-            min-width: 1440px;           
+            justify-content: flex-start; 
         }
         .info-team-item{
             padding-left: 16px;
@@ -1333,7 +1333,6 @@ letter-spacing: 0.04em;
         /* margin: 0 auto; */
         }        
         .footer-container {
-        width: 1158px;
         display: flex;
         flex-wrap: nowrap;
         gap: 0;
