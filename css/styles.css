@@ -42,7 +42,7 @@ button{
     padding-left: 16px;
     padding-right: 16px; 
     margin: 0 auto;
-    outline: 2px solid red;
+    /* outline: 2px solid red; */
 }
 
 .header{
@@ -57,11 +57,9 @@ button{
     border: none;
     background-color: transparent;
     padding: 16px;
-    /* margin-left: auto; */
 
 }
 .header-container{
-    /* display: flex; */
 }
 .header-nav{
     justify-content: space-between;
@@ -80,7 +78,6 @@ button{
     text-transform: uppercase;
     line-height: 1.17;
     letter-spacing: 0.03em;
-    /* margin-right: 76px; */
 }
 
 .logo-black {
@@ -92,10 +89,6 @@ button{
     letter-spacing: 0.03em;
 }
 
-/* .header-menu-list {
-    /* display: flex;    
-    gap: 40px;     */
-} */
 
 .header-menu-item{
 }
@@ -290,9 +283,7 @@ text-transform: capitalize;
     url(../images/header-bg-mob-2x.jpg);        
     }
 } 
-/* .solutions-container{
-    background-color: transparent; 
-} */
+
 .solutions-container{
     padding: 72px 16px;
 }
@@ -677,8 +668,7 @@ position: absolute;
 .footer-subscr-form{
     display: flex;
     flex-wrap: wrap;
-    /* width: 288px; */
-gap: 24px;
+    gap: 24px;
 }
 .footer-subscr-title{
     color: #FFF;
@@ -1074,8 +1064,7 @@ margin: 0 auto;
     }
 
     .header-container{
-/* width: 768px; */
-display: flex;
+    display: flex;
     align-items: center;
     justify-content: center;
     }
@@ -1097,7 +1086,7 @@ font-family: Roboto;
 font-size: 12px;
 font-style: normal;
 font-weight: 400;
-line-height: 1.17; /* 116.667% */
+line-height: 1.17;
 letter-spacing: 0.04em;
     }
 
@@ -1178,7 +1167,6 @@ letter-spacing: 0.04em;
         }
 
         .check-text{
-            /*html 590, 595  */
             width: 338px;
         }
         .check-span{
@@ -1211,7 +1199,7 @@ letter-spacing: 0.04em;
         margin: 0 auto;
     }
     .header{
-        min-width: 1158px;
+        max-width: 1440px;
 
     }
 
