@@ -1258,17 +1258,6 @@ letter-spacing: 0.04em;
     rgba(46, 47, 66, 0.70)),
     url(../images/header-bg-dt.jpg);
         }
-
-        @media (min-device-pixel-ratio: 2),
-        (min-resolution: 192dpi),
-        (min-resolution: 2dppx) {
-            .first-solutions {
-                background-image: linear-gradient(
-            rgba(46, 47, 66, 0.70),
-            rgba(46, 47, 66, 0.70)),
-            url(../images/header-bg-dt-2x.jpg);
-                } 
-
         .solutions-title {
             width: 1440px;
             font-size: 56px;
@@ -1370,14 +1359,13 @@ letter-spacing: 0.04em;
         }
 
         @media (min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) 
-    {
-    .first-solutions {
-    background-image: linear-gradient(
-    rgba(46, 47, 66, 0.70),
-    rgba(46, 47, 66, 0.70)),
-    url(../images/header-bg-dt-2x.jpg);
-    } 
-    }
-}
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+            .first-solutions {
+                background-image: linear-gradient(
+            rgba(46, 47, 66, 0.70),
+            rgba(46, 47, 66, 0.70)),
+            url(../images/header-bg-dt-2x.jpg);
+                } 
+            }
+        }        
