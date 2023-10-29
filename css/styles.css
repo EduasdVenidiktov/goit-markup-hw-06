@@ -46,7 +46,6 @@ button{
 }
 
 .header{
-    max-width: 320px; 
     background: #FFF;
     border-bottom: 1px solid #e7e9fc;
     box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08); 
@@ -260,7 +259,7 @@ text-transform: capitalize;
 
 .first-solutions {
     max-width: 320px;
-    padding: 72px 16px;
+    padding: 72px 0;
     background-color: rgba(46, 47, 66, 0.70);
     background-image: linear-gradient(
     rgba(46, 47, 66, 0.70),
@@ -401,8 +400,6 @@ padding: 96px 0;
 
 .third-team {
     background-color: #F4F4FD;
-    display: flex;
-    flex-direction: column;
     text-align: center;
     padding-top: 96px;
     padding-bottom: 96px;
@@ -1017,8 +1014,9 @@ display: block;
 
 
     .first-solutions{
-        min-width: 768px; 
+        max-width: 768px; 
         margin: 0 auto;
+        padding: 112px 0;
 
     background-color: rgba(46, 47, 66, 0.70);
     background-image: linear-gradient(
@@ -1027,16 +1025,18 @@ display: block;
     url(../images/header-bg-tab.jpg);
         }
 
+        
         @media (min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
-        .first-solutions {
-            background-image: linear-gradient(
-        rgba(46, 47, 66, 0.70),
-        rgba(46, 47, 66, 0.70)),
-        url(../images/header-bg-tab-2x.jpg);
-            } 
-} 
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) 
+        {
+            .first-solutions {
+                background-image: linear-gradient(
+            rgba(46, 47, 66, 0.70),
+            rgba(46, 47, 66, 0.70)),
+            url(../images/header-bg-tab-2x.jpg);
+                } 
+            }
 
     .solutions-title {
         text-align: justify;
@@ -1055,7 +1055,6 @@ display: block;
     }
 
     .header{
-max-width: 768px;
 margin: 0 auto;
 
     }
@@ -1100,6 +1099,12 @@ letter-spacing: 0.04em;
     }
     .features-subtitle {
         text-align: left;
+        font-size: 20px;
+        line-height: 1.2;
+    }
+
+    .third-team{
+        display: block;
     }
     .team-title{
     font-size: 36px;
@@ -1167,6 +1172,9 @@ letter-spacing: 0.04em;
         .footer-subscr-title{
             padding: 0;
         }
+        .footer-soc-wrap{
+            margin-bottom: 0;
+        }
 
         .check-text{
             width: 338px;
@@ -1188,7 +1196,7 @@ letter-spacing: 0.04em;
         .check-span{
             margin: 0;
         }
-
+        
 
 
         
@@ -1251,6 +1259,8 @@ letter-spacing: 0.04em;
 
     .first-solutions{
         max-width: 1440px;
+        padding: 188px 0;
+
 
         background-color: rgba(46, 47, 66, 0.70);
     background-image: linear-gradient(
@@ -1258,6 +1268,17 @@ letter-spacing: 0.04em;
     rgba(46, 47, 66, 0.70)),
     url(../images/header-bg-dt.jpg);
         }
+
+        @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+            .first-solutions {
+                background-image: linear-gradient(
+            rgba(46, 47, 66, 0.70),
+            rgba(46, 47, 66, 0.70)),
+            url(../images/header-bg-dt-2x.jpg);
+                } 
+            }
         .solutions-title {
             width: 1440px;
             font-size: 56px;
@@ -1268,7 +1289,6 @@ letter-spacing: 0.04em;
         
         
         .solutions-container{
-        padding: 188px 0;
         }
         
         .features-subtitle{
@@ -1316,9 +1336,7 @@ letter-spacing: 0.04em;
     
     
             .footer{
-            /* max-width: 1440px; */
             padding: 100px 0px;
-            /* margin: 0 auto; */
             }        
             .footer-container {
             display: flex;
@@ -1357,15 +1375,5 @@ letter-spacing: 0.04em;
                 flex-wrap: nowrap;
             }
         }
-
-        @media (min-device-pixel-ratio: 2),
-        (min-resolution: 192dpi),
-        (min-resolution: 2dppx) {
-            .first-solutions {
-                background-image: linear-gradient(
-            rgba(46, 47, 66, 0.70),
-            rgba(46, 47, 66, 0.70)),
-            url(../images/header-bg-dt-2x.jpg);
-                } 
-            }
-        }        
+    }
+                
